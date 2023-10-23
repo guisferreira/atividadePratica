@@ -1,17 +1,11 @@
+  /* configuracoes gerais da pagina */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  :root {
-    --text-color: white;
-    --stroke-color: rgba(255, 255, 255, 0.5);
-    --surface-color: rgba(255, 255, 255, 0.05);
-    --surface-color-hover: rgba(0, 0, 0, 0.02);
-    --highlight-color: rgba(255, 255, 255, 0.2);
-  }
-  
+  /*cor de fundo*/
   body {
     background-image: linear-gradient(to bottom right, #0D0D0D, #262626, #404040, #595959, #A6A6A6);
     height: 100vh;
@@ -21,31 +15,35 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
   }
-  
+
+  /*div principal*/  
   #container {
     width: 100%;
     max-width: 588px;
     margin: 56px auto 0px;
     padding: 0 24px;
   }
-  
+
+  /*alinhamento do perfil*/  
   #profile {
     text-align: center;
     padding: 24px;
   }
   
+  /*imagem do perfil*/
   #profile img {
     width: 180px;
     display: block;
     margin: auto;
   }
   
+  /*texto do perfil*/
   #profile p {
     font-weight: 500;
     line-height: 24px;
     margin-top: 8px;
   }
-  
+  /*lista*/
   ul {
     list-style: none;
   
@@ -64,12 +62,9 @@
     
     padding: 16px 24px;
     
-    background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
-    
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     
     text-decoration: none;
     font-weight: 500;
@@ -79,14 +74,15 @@
   
   /*pseudo-selector*/
   ul li a:hover {
-    background: var(--surface-color-hover);  
-    border: 1.5px solid var(--text-color);
+    background: rgba(0, 0, 0, 0.02);  
+    border: 1.5px solid white;
   }
-  
+
+  /*paginas complementares*/
   #info {
     padding: 16px 24px;
-    background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;  
     text-align: justify;
   }
